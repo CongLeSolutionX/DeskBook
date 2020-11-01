@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDg-fT-Vvj">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDg-fT-Vvj">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,25 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u0L-7T-gHk">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="c6G-G6-IQq" detailTextLabel="MUi-2q-Ekx" style="IBUITableViewCellStyleValue1" id="rbN-Rb-x36">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbN-Rb-x36" id="Lpa-Mp-aUi">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6G-G6-IQq">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUi-2q-Ekx">
-                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <rect key="frame" x="315" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -53,6 +51,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="wHP-4u-BKx"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u0L-7T-gHk" firstAttribute="top" secondItem="wHP-4u-BKx" secondAttribute="top" id="6BO-3k-2BW"/>
@@ -61,7 +60,6 @@
                             <constraint firstItem="u0L-7T-gHk" firstAttribute="centerY" secondItem="wHP-4u-BKx" secondAttribute="centerY" id="Nvs-pf-xxh"/>
                             <constraint firstItem="u0L-7T-gHk" firstAttribute="centerX" secondItem="wHP-4u-BKx" secondAttribute="centerX" id="Us3-MQ-mXy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wHP-4u-BKx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Deskbook" id="Dsa-ec-Z0I">
                         <barButtonItem key="backBarButtonItem" title="Back" id="dDW-Xv-EcZ"/>
@@ -83,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eiS-x6-jUU">
-                                <rect key="frame" x="16" y="76" width="343" height="575"/>
+                                <rect key="frame" x="16" y="56" width="343" height="595"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uUn-cE-cdw" userLabel="Name Row">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -100,7 +98,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="ahy-ss-wiA"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -126,7 +123,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="mhf-Qp-xUC"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -150,7 +146,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="dJZ-d9-zj6"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -162,7 +157,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-Xj-us8" userLabel="Bio Label">
                                         <rect key="frame" x="0.0" y="114" width="343" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtY-et-6wO">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More information:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtY-et-6wO">
                                                 <rect key="frame" x="0.0" y="5" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -174,26 +169,27 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-Hd-Kun" userLabel="Bio Row">
-                                        <rect key="frame" x="0.0" y="152" width="343" height="423"/>
+                                        <rect key="frame" x="0.0" y="152" width="343" height="443"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kS-al-6Z5">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="423"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="443"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-3j-n0m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="423"/>
-                                                        <color key="backgroundColor" red="0.95617485439716865" green="0.95617485439716865" blue="0.95617485439716865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
+                                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-ob-GCh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="443"/>
+                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <wkWebViewConfiguration key="configuration">
+                                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                            <wkPreferences key="preferences"/>
+                                                        </wkWebViewConfiguration>
+                                                    </wkWebView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="GLM-3j-n0m" firstAttribute="top" secondItem="6kS-al-6Z5" secondAttribute="top" id="6rC-JT-gtt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8AW-ob-GCh" secondAttribute="trailing" id="3Ak-6p-dRk"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Kge-QU-ggT"/>
-                                                    <constraint firstItem="GLM-3j-n0m" firstAttribute="width" secondItem="6kS-al-6Z5" secondAttribute="width" id="iTY-cp-h4L"/>
-                                                    <constraint firstItem="GLM-3j-n0m" firstAttribute="leading" secondItem="6kS-al-6Z5" secondAttribute="leading" id="w02-sd-LhI"/>
-                                                    <constraint firstItem="GLM-3j-n0m" firstAttribute="height" secondItem="6kS-al-6Z5" secondAttribute="height" id="xrd-Vh-Es1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8AW-ob-GCh" secondAttribute="bottom" id="bsS-ZH-I0j"/>
+                                                    <constraint firstItem="8AW-ob-GCh" firstAttribute="leading" secondItem="6kS-al-6Z5" secondAttribute="leading" id="nXs-Cb-QQy"/>
+                                                    <constraint firstItem="8AW-ob-GCh" firstAttribute="top" secondItem="6kS-al-6Z5" secondAttribute="top" id="qPT-n2-BlB"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -201,6 +197,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pRe-2n-Qgp"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eiS-x6-jUU" firstAttribute="top" secondItem="pRe-2n-Qgp" secondAttribute="top" constant="12" id="CSN-10-kuM"/>
@@ -208,11 +205,10 @@
                             <constraint firstItem="pRe-2n-Qgp" firstAttribute="bottom" secondItem="6kS-al-6Z5" secondAttribute="bottom" constant="16" id="pbh-fi-n1Z"/>
                             <constraint firstItem="eiS-x6-jUU" firstAttribute="centerX" secondItem="pRe-2n-Qgp" secondAttribute="centerX" id="weT-1u-YFB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pRe-2n-Qgp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Staff Member" id="XcF-u0-YiM"/>
                     <connections>
-                        <outlet property="bioText" destination="GLM-3j-n0m" id="TrB-cG-0RA"/>
+                        <outlet property="bioWebView" destination="8AW-ob-GCh" id="PDO-l8-lGv"/>
                         <outlet property="emailField" destination="IAw-22-vB1" id="q1Q-Zt-R3K"/>
                         <outlet property="mobileField" destination="hcX-lE-D2b" id="LAK-R0-5x1"/>
                         <outlet property="nameField" destination="mJP-OG-dAc" id="Um2-Q4-wVM"/>
@@ -228,7 +224,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDg-fT-Vvj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nhf-O7-B9A">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

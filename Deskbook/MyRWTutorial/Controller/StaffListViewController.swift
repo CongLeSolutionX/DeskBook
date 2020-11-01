@@ -27,8 +27,9 @@ class StaffListViewController: UIViewController {
     tableViewSetup()
     loadData()
   }
-  
-  // MARK: Implementation
+}
+// MARK: - Implementation
+extension StaffListViewController {
   
   private func loadData() {
     StaffAPI.shared.loadStaffList { (staffList, errorMessage) in
@@ -42,7 +43,6 @@ class StaffListViewController: UIViewController {
           // Alert
           AlertHelper.showSimpleAlert(title: "Load Error", message: "Unable to load staff right now. Ensure you have Internet connectivity and try again.", viewController: self)
         }
-        // Return
         return
       }
       
@@ -83,11 +83,9 @@ class StaffListViewController: UIViewController {
       detailView?.staffMember = staff
     }
   }
-  
 }
 
-// MARK: UITableViewDataSource
-
+// MARK: - UITableViewDataSource
 extension StaffListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

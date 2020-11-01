@@ -1,30 +1,19 @@
 
 import Foundation
 
-/**
- This singleton class allows us to read remote data. Access via `StaffAPI.shared`.
- */
+///  This singleton class allows us to read remote data. Access via `StaffAPI.shared`.
 final class StaffAPI {
+  /// A type to define our StaffLoaded closure.
+  typealias StaffLoadedClosure = (_ staffList: [Staff]?, _ error: String?) -> ()
   
   static let shared = StaffAPI()
   private let httpClient = HTTPClient()
   private let apiHost = "http://localhost:3000/api"
   private let genericError = "There was an issue loading data. Please contact your app support."
-  
-  /**
-   Private initializer.
-  */
-  private init() {
 
-  }
-  /**
-   A type to define our StaffLoaded closure.
-  */
-  typealias StaffLoadedClosure = (_ staffList: [Staff]?, _ error: String?) -> ()
+  private init() { }
   
-  /**
-   Load the staff list (asynch), calling the closure when the request ends with data or in error
-  */
+  /// Load the staff list (asynch), calling the closure when the request ends with data or in error
   func loadStaffList(staffLoaded: @escaping StaffLoadedClosure) {
     
     // Make our network request

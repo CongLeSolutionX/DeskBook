@@ -1,9 +1,7 @@
 
 import Foundation
 
-/**
- Defines our main struct to represent a Staff Member.
- */
+/// Defines our main struct to represent a Staff Member.
 struct Staff: Codable {
   let id: Int
   let name: String
@@ -24,9 +22,7 @@ extension Staff: CustomStringConvertible {
 }
 
 extension Staff {
-  /**
-   A convenience method to extract the mobile phone's digits only
-   */
+ /// A convenience method to extract the mobile phone's digits only
   func mobileDigits() -> String {
     return mobile.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
   }
