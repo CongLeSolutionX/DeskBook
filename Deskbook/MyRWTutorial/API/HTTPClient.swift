@@ -1,9 +1,7 @@
 
 import UIKit
 
-/**
- Define our custom errors
- */
+/// Define our custom errors
 enum HTTPClientError {
   case invalidUrl
   case connectionError(errorDescription: String)
@@ -24,10 +22,7 @@ class HTTPClient {
   let semaphore = DispatchSemaphore(value: 1)
   
   // MARK: Request handling
-  
-  /**
-   A closure type for our request method.
-   */
+  /// A closure type for our request method
   typealias RequestCompletedClosure = (_ requestData: Data?, _ error: HTTPClientError?) -> ()
   /**
    Request data from a remote resource.

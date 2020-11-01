@@ -3,7 +3,12 @@ body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* Bio Style */
+/* Bio Style stored locally and used to inject to HtmlHelper.swift */
+@font-face {
+  font-family: Neuropol;
+  src: url('Fonts/NEUROPOL.ttf');
+}
+
 
 div.bio {
   font-size: 16px;
@@ -11,4 +16,12 @@ div.bio {
 
 div.bio dt {
   font-weight: bold;
+  font-family: Neuropol;
+}
+
+div.showBadge {
+  background: url("badge.png");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: right top;
 }

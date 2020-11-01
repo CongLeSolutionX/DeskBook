@@ -17,6 +17,8 @@
 		07BF73D61FA00E88002DE25F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF73D51FA00E88002DE25F /* HTTPClient.swift */; };
 		07D5B87B1FA048B40010E7DB /* StaffListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D5B87A1FA048B40010E7DB /* StaffListViewController.swift */; };
 		07E81F1D1FAD79DE00EE894A /* HtmlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E81F1C1FAD79DE00EE894A /* HtmlHelper.swift */; };
+		4C06507C254E68BE00F2280C /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4C06507B254E68BD00F2280C /* Fonts */; };
+		4C065080254E6F7D00F2280C /* badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06507F254E6F7D00F2280C /* badge.png */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		07BF73D51FA00E88002DE25F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		07D5B87A1FA048B40010E7DB /* StaffListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListViewController.swift; sourceTree = "<group>"; };
 		07E81F1C1FAD79DE00EE894A /* HtmlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlHelper.swift; sourceTree = "<group>"; };
+		4C06507B254E68BD00F2280C /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		4C06507F254E6F7D00F2280C /* badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badge.png; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* Deskbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0785580A1FAD8F120031F9E7 /* style.css */,
+				4C06507F254E6F7D00F2280C /* badge.png */,
 			);
 			path = Html;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				07BF73D01FA00AFB002DE25F /* Controller */,
 				07BF73CF1FA00AEA002DE25F /* API */,
 				07BF73CE1FA00AD6002DE25F /* Model */,
+				4C06507B254E68BD00F2280C /* Fonts */,
 				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
 				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
 				D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */,
@@ -189,8 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C06507C254E68BE00F2280C /* Fonts in Resources */,
 				D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */,
 				0785580B1FAD8F120031F9E7 /* style.css in Resources */,
+				4C065080254E6F7D00F2280C /* badge.png in Resources */,
 				07081CAD1FAD63D200D849D7 /* LaunchScreen.xib in Resources */,
 				D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */,
 			);

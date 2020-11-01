@@ -12,20 +12,21 @@ class HtmlHelper {
     //    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     //    <style></style>
     let wrappedHtml = """
-    <head>
-    <title>Deskbook WebView</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    \(getCss())
-    </head>
-    <body>
-    <div class="\(wrapClass)">\(html)</div>
-    </body>
+      <head>
+        <title>Deskbook WebView</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="style.css" rel="stylesheet" type="text/css">
+      </head>
+      <body>
+        <div class="\(wrapClass)">\(html)</div>
+      </body>
     """
     return wrappedHtml
   }
   
   /**
-   Returns an inline CSS block <style> with the bundle-included css
+   Instead of using <link href="style.css" rel="stylesheet" type="text/css">,
+   We returns  an inline CSS block <style> with the bundle-included css as type in ` \(getCss())`
    Why not use <style src="path/to/local/file"></style>?
    Since Swift 3, WKWebView's security settings disallows it from loading LOCAL files without some extra settings.
    To keep the code simple, we'll use the "string injection" trick!

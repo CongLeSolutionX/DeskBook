@@ -41,8 +41,8 @@ extension StaffDetailViewController {
       self.emailField.text = self.staffMember.email
       self.mobileField.text = self.staffMember.mobile
       self.bioWebView.loadHTMLString(
-        HtmlHelper.wrap(html: self.staffMember.bio),
-        baseURL: nil
+        HtmlHelper.wrap(html: self.staffMember.bio, withClass: "bio showBadge"),
+        baseURL: Bundle.main.bundleURL
       )
     }
   }
@@ -119,23 +119,39 @@ extension StaffDetailViewController: MFMailComposeViewControllerDelegate {
 // MARK: - WKNavigationDelegate
 extension StaffDetailViewController: WKNavigationDelegate {
   func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    
     guard let urlTarget = navigationAction.request.url else {
+      /// Somehow we did not receive a URL or perhaps it's invalid, so we exit rejecting the URL
       decisionHandler(.cancel)
       return
     }
-    
+    // Extract the URL as a string
     let urlString = urlTarget.absoluteString
-    if urlString == "about:blank" {
+    /// Check to see if the Navigation Target is the bundle path (which is how the WKWebView loads initially),
+    /// or starts with bundle path (which is how we load bundle resources), and allow it
+    if urlString.hasPrefix(Bundle.main.bundleURL.absoluteString) || urlString == "about:blank" {
       decisionHandler(.allow)
       return
     }
-    /// Cancel the WKNavigationDelegate and let the Safari brings the content into the webview
+    
+    // Assert: We have an intent to load/navigate to a URL other than the bundle path
+    
+  
     if urlString.hasPrefix("https://twitter.com") {
+      // The link is to Twitter
+      
+      /// So, since we want to handle that ourselves,
+      /// we actually CANCEL the navigation on the WKWebView
       decisionHandler(.cancel)
+      
+      /// Then let's do what we really want, which is to use a SafariVC
       openWithSafariVC(url: urlTarget)
+      
+      /// Since we've called decisionHandler already, we must return or we crash!
       return
     }
     
+    /// For anything else, disallow it
     decisionHandler(.cancel)
   }
 }

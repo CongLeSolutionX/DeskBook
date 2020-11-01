@@ -8,6 +8,11 @@
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NEUROPOL.ttf">
+            <string>Neuropol</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Deskbook-->
         <scene sceneID="JeE-26-Sar">
@@ -87,8 +92,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-qc-OCQ">
-                                                <rect key="frame" x="0.0" y="5" width="93" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="6.5" width="93" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Neuropol" family="Neuropol" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -110,9 +115,9 @@
                                         <rect key="frame" x="0.0" y="38" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNA-s3-qoB">
-                                                <rect key="frame" x="0.0" y="5" width="93" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="6.5" width="93" height="17.5"/>
                                                 <gestureRecognizers/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Neuropol" family="Neuropol" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -135,8 +140,8 @@
                                         <rect key="frame" x="0.0" y="76" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee0-kh-oXB">
-                                                <rect key="frame" x="0.0" y="5" width="93" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="6.5" width="93" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Neuropol" family="Neuropol" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -158,8 +163,8 @@
                                         <rect key="frame" x="0.0" y="114" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More information:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtY-et-6wO">
-                                                <rect key="frame" x="0.0" y="5" width="343" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="6.5" width="343" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Neuropol" family="Neuropol" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
